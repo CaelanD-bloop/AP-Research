@@ -1,0 +1,422 @@
+# Beginner's Guide to Computer Science: Security and Web Development
+
+This guide introduces four important areas of computer science. Each section explains the basic concepts in plain language, defines unfamiliar technical terms, and provides simple examples.
+
+## 1. Network Security
+
+Network security means protecting computers, devices, and the information they exchange over a network. A network is a group of connected devices, such as computers connected to the internet.
+
+### A. Firewalls
+
+A firewall is a security system that monitors network traffic and decides which connections should be allowed or blocked.
+
+Think of a firewall as a security guard at the entrance to a building. The guard checks who is allowed to enter, and the firewall checks network traffic against security rules.
+
+[What is a Firewall and How does it Work?](https://images.openai.com/static-rsc-4/fCfiLp5BufEwFWdoQFWJmhZ8kCyaML8vl-ZS-paLiLgjEYk-Rokm7m8XPn8JT74uoOSegNv6l9OCL5-f3OwMPDWzjYIZja3x_bjIbpBQFO4AEzoAbaBxzcR6rBqVAM0WwxNlVI34EwZkbDv1nh003wnoluEHxoCoRxJlfk52wFI?purpose=inline)
+
+[wallarm.com](https://www.wallarm.com/what/the-concept-of-a-firewall?utm_source=chatgpt.com)
+
+Example: Your computer receives a connection request from an unknown source. The firewall checks its rules and may block the connection if it is not allowed.
+
+Key terms:
+
+- Network traffic: Data traveling between computers or devices.
+- Rule: An instruction that tells the firewall what to allow or block.
+- Malicious: Intended to cause harm, steal information, or gain unauthorized access.
+
+Why it matters: Firewalls help prevent unwanted network connections, but they cannot protect against every type of attack.
+
+### B. Virtual Private Networks (VPNs)
+
+A Virtual Private Network (VPN) creates an encrypted connection between your device and a VPN server over a network, such as the internet.
+
+Encryption means converting readable information into a form that cannot easily be understood without the correct key.
+
+Think of a VPN as sending a letter inside a locked box. Someone who intercepts the box should not be able to read the letter.
+
+[How a VPN Works Diagram (Beginner-Friendly)](https://images.openai.com/static-rsc-4/fNWOiXL6rIV9Z6TCk6_5pzWiw7rpqFZFQDkndGek_wxXrLER4ihiCZ-Iv5I3UoIAKXgVGv8X4m23P_uhgrGtFgqnrTz9RPAWVBVDHRXMBAdts1o-xXy9zcYDKPWLzpNEz99ICAhLqchkpngxQUGmB4ZFGYIusR8SGfzjPacRXsE?purpose=inline)
+
+[vpncentral.com](https://vpncentral.com/how-vpn-works-diagram/?utm_source=chatgpt.com)
+
+Example: You connect your laptop to a VPN before using public Wi-Fi at a coffee shop. The VPN encrypts traffic traveling through the VPN connection, helping protect it from people monitoring the local network.
+
+Key terms:
+
+- VPN server: A computer that provides the VPN connection.
+- Encrypted connection: A connection that protects information by making it unreadable to unauthorized observers.
+- VPN provider: The organization operating the VPN service.
+
+Why it matters: VPNs can improve privacy and protect network traffic, but they do not make you completely anonymous or guarantee that every website or file is safe.
+
+### C. Intrusion Detection Systems (IDS)
+
+An Intrusion Detection System (IDS) monitors network traffic or computer activity for signs of suspicious behavior.
+
+An IDS is like a burglar alarm. It looks for signs of a possible break-in and alerts someone when it detects something suspicious.
+
+[What is IDS and IPS in Cyber Security?](https://images.openai.com/static-rsc-4/xVwHAh1sO2SGEELy0jqiXnFrsv7VJelRWNIT_RpwPZLTkwrOMLtGnn-k2M7jAtxJts-zUHQEIngVcw5zLQQBKzpaA8NMCHaAhguP9rcDTHxD52hyb2Bli-GDIzyP8k28DeiHpHcwBB1a01dnIFAVhJgbHfixTfoHIA1alnU2Nzw?purpose=inline)
+
+[uninets.com](https://www.uninets.com/blog/what-are-ids-ips?utm_source=chatgpt.com)
+
+Example: An IDS detects hundreds of unusual connection attempts against a company's server. It generates an alert so a security administrator can investigate.
+
+Key terms:
+
+- Intrusion: An attempt to enter a computer system or network without permission.
+- Suspicious activity: Behavior that may indicate an attack or security problem.
+- Alert: A notification that something potentially dangerous has been detected.
+
+Why it matters: An IDS helps security teams discover possible attacks. A traditional IDS primarily detects and reports problems; it does not necessarily block them. A system designed to automatically block suspicious traffic is often called an Intrusion Prevention System (IPS).
+
+## 2. Application Security
+
+Application security means protecting software applications from weaknesses that attackers could exploit.
+
+An application is a software program, such as a website, online banking service, or mobile app.
+
+Two common ways to test application security are Static Application Security Testing and Dynamic Application Security Testing.
+
+### A. Static Application Security Testing (SAST)
+
+Static Application Security Testing (SAST) examines an application's source code without running the application.
+
+Source code is the set of instructions a programmer writes in a programming language.
+
+Think of SAST as proofreading a recipe before cooking. You look for mistakes in the instructions before following them.
+
+[What to Look for When Selecting a Static Application Security Testing (SAST) Solution](https://images.openai.com/static-rsc-4/YU_MIhx_G8Wl0ZiYsJmJGSR44qJEwh3gmgkqV9o5PBETAhkjzx5bRiZNTPGdPhp_gtZN9_zex7_2dM114ND7ut0GQ9xFijTEDnxWk7rAkEvCU1euwHaNNzC9Ryc_pVJbZYScIPLBD8n-qypmOyzmYcbttaCxuVze5yzk50ZyqEI?purpose=inline)
+
+[thehackernews.com](https://thehackernews.com/2023/05/what-to-look-for-when-selecting-static.html?utm_source=chatgpt.com)
+
+Example:
+
+A programmer writes code that includes a password directly in the source file:
+
+```
+const password = "MySecretPassword123";
+```
+
+A SAST tool may flag this because storing a password directly in source code can expose it to other people who can access the code.
+
+Key terms:
+
+- Source code: The instructions written by a programmer.
+- Security vulnerability: A weakness that could allow someone to compromise a system.
+- SAST tool: Software that examines code to identify possible security problems.
+
+Main point: SAST looks for potential security problems in the code before or during development, without needing to run the application.
+
+### B. Dynamic Application Security Testing (DAST)
+
+Dynamic Application Security Testing (DAST) tests an application while it is running. It sends requests to the application and examines its responses for possible security weaknesses.
+
+Think of DAST as testing a locked door by trying to open it. Instead of inspecting the door's design, you test how it behaves in practice.
+
+[Dynamic Application Security Testing (DAST) | Appknox](https://images.openai.com/static-rsc-4/R3-Gj_XSQ0QBQ1ZFRhMQxNSbNyArhO88ihqDLNl4YsJjAyFmsE-uR-CvPsxnw-bnGEJWWkEthihbPlHoH_3uhdoXw6CD1BLPy4nc4RdwX-8ieIhjX9gKTwbCawmdKxPoihKHtaQCusYMbFTivpwTGpu8FDohlbEv0f3yZWI2G_Y?purpose=inline)
+
+[appknox.com](https://www.appknox.com/blog/dynamic-application-security-testing-dast?utm_source=chatgpt.com)
+
+Example: A security tester uses a DAST tool to send unexpected input to a running website's login form. The tool checks whether the website handles the input safely.
+
+Key terms:
+
+- Running application: Software that has been started and is operating.
+- Input: Information supplied to a program, such as text entered into a form.
+- Test request: Data sent to an application to see how it responds.
+
+Main point: DAST looks for security problems in the behavior of a running application.
+
+### SAST vs. DAST
+
+| Feature                           | SAST                              | DAST                                              |
+| --------------------------------- | --------------------------------- | ------------------------------------------------- |
+| What it examines                  | Source code                       | A running application                             |
+| Does the application need to run? | No                                | Yes                                               |
+| Simple analogy                    | Checking a recipe                 | Testing the finished dish                         |
+| Main purpose                      | Find potential weaknesses in code | Find potential weaknesses in application behavior |
+
+The two approaches complement each other. Using both can reveal problems that either approach might miss.
+
+## 3. Front-End Web Development
+
+Front-end web development involves creating the parts of a website that users see and interact with in their web browsers.
+
+There are three fundamental technologies in this area: HTML, CSS, and JavaScript.
+
+### A. HTML
+
+HTML (HyperText Markup Language) defines the structure and content of a web page.
+
+Think of HTML as the frame of a house. It establishes what is there and how the pieces are organized.
+
+[Learn HTML Basics for Beginners in Just 15 Minutes](https://images.openai.com/static-rsc-4/Y9_odVjzc3x28wLZoiE15td8Hfm2AtR0yLqHlrF34o5IqeQcfEa3WBSRPwGkGWRy2eYP-stp22egfNW572z_wmcmWu_FHSpHRIDNeQkw3RuyK7DOAhxJWMEGX6yoFt538smy-AcrnAs7ukUdIvhJq8HmTAKzW3masbk22BTN7hc?purpose=inline)
+
+[freecodecamp.org](https://www.freecodecamp.org/news/html-basics-for-beginners/?utm_source=chatgpt.com)
+
+Example:
+
+```
+<h1>My First Website</h1>
+<p>Welcome to my website!</p>
+<button>Click Me</button>
+```
+
+This code defines:
+
+- `<h1>`: A main heading.
+- `<p>`: A paragraph of text.
+- `<button>`: A button the user can interact with.
+
+The tags, such as `<p>` and `</p>`, tell the browser what kind of content it is displaying.
+
+Main point: HTML defines what content appears on the page and its basic structure.
+
+### B. CSS
+
+CSS (Cascading Style Sheets) controls the appearance and layout of a web page.
+
+Think of CSS as the paint, decorations, and arrangement of furniture in a house. It changes how the page looks without replacing its underlying content.
+
+[Lesson 8 - CSS Crash Course for Beginners #fullstackroadmap - DEV Community](https://images.openai.com/static-rsc-4/H_x-9AOp-Ktln_xPfB1YMOHRwLWbFp0eSdgDlhphmx27mzRSBRMO_7Hxhyo54FgfTlHjaQApoeo98OTcHwG3UXh317vywgd5trVrQHt7abVkrtz0Yzw7T-ll4-lJlT9pnvaeKW6JQ-OqK4zQM-6JKcYMeNdwUtTUdx8YGZ9N1P4?purpose=inline)
+
+[dev.to](https://dev.to/zachgoll/lesson-8-css-crash-course-for-beginners-fullstackroadmap-59b1?utm_source=chatgpt.com)
+
+Example:
+
+```
+h1 {
+  color: blue;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  background-color: green;
+  color: white;
+}
+```
+
+This code makes the heading blue, increases the paragraph text size, and gives the button a green background with white text.
+
+Key terms:
+
+- Selector: The part of CSS that identifies which elements to style, such as `h1`.
+- Property: The appearance setting being changed, such as `color`.
+- Value: The setting assigned to a property, such as `blue`.
+
+Main point: CSS controls how the website looks.
+
+### C. JavaScript
+
+JavaScript is a programming language that allows a web page to respond to user actions and perform tasks.
+
+Think of JavaScript as the electrical and control systems in a house. It makes things happen when someone presses a switch.
+
+[Appending to the DOM and the Dangers of Using .innerHTML | by Jasen Miyamoto | Medium](https://images.openai.com/static-rsc-4/F667HYVqwqLTEXkLbgFl0HEjFgdCZtU5y46Dalyy1-bf4fevg9s-EufWpxJBukhWEA7A39BLNxUIbDR4wExqYQzPv1M6sGz5bNhc_DxHFcO7FnplMHsFCjjJdN6tV1WRM9Mq22oHrQD-mAEjByTiA9vMNNj-o0M-osW14-t_LMw?purpose=inline)
+
+[medium.com](https://medium.com/%40jasen.miyamoto/appending-to-the-dom-and-the-dangers-of-using-innerhtml-debd77e53e70?utm_source=chatgpt.com)
+
+Example:
+
+```
+<p id="message">Hello!</p>
+<button onclick="changeMessage()">Click Me</button>
+
+<script>
+  function changeMessage() {
+    document.getElementById("message").textContent =
+      "You clicked the button!";
+  }
+</script>
+```
+
+When the user clicks the button, the displayed paragraph changes.
+
+Key terms:
+
+- Function: A reusable set of instructions that performs a task.
+- Event: Something that happens, such as a button click.
+- DOM (Document Object Model): The browser's representation of the web page that JavaScript can read and change.
+
+Main point: JavaScript makes web pages interactive.
+
+### How the three work together
+
+HTML — Structure
+
+Defines the heading, paragraph, and button.
+
+CSS — Appearance
+
+Changes the colors, sizes, and spacing.
+
+JavaScript — Behavior
+
+Makes the button change the paragraph when clicked.
+
+Together, these technologies let you build a website that has content, looks appealing, and responds to user actions.
+
+## 4. Back-End Web Development
+
+Back-end web development involves the server-side parts of a website or application. These parts handle requests, perform tasks, and send information back to the user or another program.
+
+This section covers only APIs, HTTP requests, and HTTP responses.
+
+### A. APIs
+
+API (Application Programming Interface) is a defined way for one software program to communicate with another.
+
+Think of an API as a waiter in a restaurant:
+
+1. You tell the waiter what you want.
+2. The waiter passes your order to the kitchen.
+3. The kitchen prepares the order.
+4. The waiter brings the result back to you.
+
+The waiter represents the API: it provides a defined way to request something without requiring you to know how the kitchen works.
+
+[REST APIs — Beginner Friendly Guide | by Swastik Sharma | Medium](https://images.openai.com/static-rsc-4/0N8vFfZhJwq3eFPXiJ8d_gIP83hhtgaFFEW2AzNXINWE7kEBJmExA4Q41RyAqOK3p0EwMocEr23EkgSdJEZgG48q-xmnKbGDaN-kD4Qyxs-JPpLYKYZrVpP01YYi8V7hkLVXXhvYAlm9_nrR6LVTUYLgvdRx95UoGZgF8hxQxl0?purpose=inline)
+
+[medium.com](https://medium.com/%40swastik7sharma/rest-apis-beginner-friendly-guide-e2a4a65239f2?utm_source=chatgpt.com)
+
+Example: A weather application uses an API to request the current temperature from a weather service.
+
+The application does not need to operate its own weather-measuring equipment. It requests the information through the service's API.
+
+Key terms:
+
+- Client: A program that requests information or a service. A web browser is one example.
+- Server: A computer or software program that receives requests and provides services or information.
+- Endpoint: A specific address where an API accepts requests for a particular resource or operation.
+
+For example, a weather API might have an endpoint such as:
+
+```
+https://api.example.com/weather
+```
+
+This is an illustrative address, not a real weather service.
+
+Main point: An API defines how software programs communicate with each other.
+
+### B. HTTP Requests
+
+HTTP (Hypertext Transfer Protocol) is a set of rules used to exchange information between clients and servers on the web.
+
+An HTTP request is a message a client sends to a server asking for information or requesting an action.
+
+Think of a request as placing an order with a restaurant.
+
+[TCP 3-Way Handshake, HTTP Protocol, and Packet Capture with Wireshark | by Gülşah Yarar | Medium](https://images.openai.com/static-rsc-4/ag_BgHFvQQp7v--mQANg287V9M--6lXiucMqzdkBqSM06NHbDu6vRgUrKbXZMv95NkV5mXgMKympf0TYiBy9SXRv3YdglT3pSlHDl6vzkL2Cr8MxP5e4bL93sE4myJflrlxDNbm5SjgG0aefeuVp8kc4mItCQ0JvxIZcrRYbBkI?purpose=inline)
+
+[medium.com](https://medium.com/%40gulsahyarar/tcp-3-way-handshake-http-protocol-and-packet-capture-with-wireshark-7115ae62f7aa?utm_source=chatgpt.com)
+
+Example: When you open a web page, your browser can send an HTTP request to the website's server asking for the page.
+
+An HTTP request commonly contains:
+
+- Method: Describes the type of operation requested.
+- URL: The address identifying the resource being requested.
+- Headers: Additional information about the request.
+- Body: Optional data sent with the request.
+
+Two common HTTP methods are:
+
+| Method | Purpose              | Simple example                   |
+| ------ | -------------------- | -------------------------------- |
+| `GET`  | Retrieve information | Ask for a list of products       |
+| `POST` | Submit information   | Send a new customer registration |
+
+A request does not guarantee success. The server must process it and decide how to respond.
+
+### C. HTTP Responses
+
+An HTTP response is the message a server sends back after processing an HTTP request.
+
+Continuing the restaurant analogy, the response is what happens after you place your order: the waiter tells you whether the order was successful and brings you the result.
+
+[A Deep Dive into HTTP: From HTTP 1 to HTTP 3](https://images.openai.com/static-rsc-4/_D3twAyh1Ksct_hTssUiV6wwpoObDsLz4TOdOoSj7bFSoZ9nST6qOudshb9igBeF-iNJSjW-TmTQDnLntSj4AScRTMQw0APp53e5mExyvU4_FnflejirC5ZGHA_EIrIx1ZtQm15ax4uowpHZHdIs5nzXpgA7jf71Fo6XHsnqidc?purpose=inline)
+
+[blog.bytebytego.com](https://blog.bytebytego.com/p/a-deep-dive-into-http-from-http-1?utm_source=chatgpt.com)
+
+Example: Your browser requests a page, and the server responds with the page's HTML.
+
+An HTTP response commonly contains:
+
+- Status code: A number indicating the result of the request.
+- Headers: Additional information about the response.
+- Body: The returned content, such as HTML or data.
+
+Common status codes include:
+
+| Status code                 | Meaning                                       | Example                                               |
+| --------------------------- | --------------------------------------------- | ----------------------------------------------------- |
+| `200 OK`                    | The request succeeded.                        | A product list was returned.                          |
+| `404 Not Found`             | The requested resource could not be found.    | A page address does not exist.                        |
+| `500 Internal Server Error` | The server encountered an unexpected problem. | A server program failed while processing the request. |
+
+### How requests and responses work together
+
+1\. Client (browser)
+
+The user opens a webpage.
+
+2\. HTTP request
+
+The browser asks the server for the page.
+
+3\. Server
+
+The server processes the request.
+
+4\. HTTP response
+
+The server returns a status code and content.
+
+5\. Browser displays the result
+
+The webpage appears on your screen.
+
+Main point: APIs define how programs communicate, HTTP requests carry messages to servers, and HTTP responses carry results back.
+
+## Quick review
+
+Choose an answer for each question, then check your results.
+
+1\. Which network security tool monitors traffic and decides which connections to allow or block?
+
+Firewall
+
+VPN
+
+API
+
+2\. Which security test examines source code without running the application?
+
+DAST
+
+SAST
+
+HTTP
+
+3\. Which front-end technology controls colors and spacing?
+
+HTML
+
+CSS
+
+JavaScript
+
+4\. What does an HTTP response do?
+
+Sends a request to a server
+
+Returns the server's result
+
+Defines webpage colors
+
+Reset quiz
+
+These four areas fit together in modern web development: network security helps protect connections, application security helps identify software weaknesses, front-end technologies build the user interface, and back-end communication lets applications request and exchange information.

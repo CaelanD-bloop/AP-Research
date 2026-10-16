@@ -1,0 +1,10 @@
+Use simple examples to explain each concept. Do not assume that I already understand technical terms. Define terms clearly that are commonly unfamiliar.  
+Have the organization be four clearly labeled sections and keep the material to the level of a beginner computer science student.
+
+Network-Security: Explain firewalls, Virtual Private Networks (VPNs), and Intrusion Detection Systems (IDS).
+
+Application-Security: Explain Static and Dynamic Application Security Tests
+
+Front-end web development: Explain HTML, CSS, Javascript, nothing more
+
+Back-end web development: Explain APIs, HTTP requests and responses nothing more.  

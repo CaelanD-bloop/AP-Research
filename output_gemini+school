@@ -1,0 +1,88 @@
+## Network-Security
+
+### Firewall
+
+* **What it is:** A digital security barrier that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+* **Simple Example:** Think of a firewall like a security guard at the entrance of a gated community. The guard checks every incoming vehicle against an approved guest list; if a car isn't on the list, it gets turned away.
+* **Key Terms:**
+* **Network Traffic:** Data (like web pages, messages, or files) moving across computers connected to the internet or a local network.
+
+
+
+### Virtual Private Network (VPN)
+
+* **What it is:** A service that creates a private, encrypted connection over a public network (like the internet), hiding your identity and location.
+* **Simple Example:** Imagine sending a letter inside an unsealed envelope—anyone handling it can read your message and see your address. A VPN puts that letter inside a locked, opaque armored box and delivers it through a secret underground tunnel directly to the recipient.
+* **Key Terms:**
+* **Encryption:** The process of converting readable text into unreadable code so that unauthorized people cannot understand it.
+
+
+
+### Intrusion Detection System (IDS)
+
+* **What it is:** A monitoring system that continuously watches network activity for suspicious behavior or known threats and alerts administrators when it finds something wrong.
+* **Simple Example:** An IDS works like a security camera equipped with a burglar alarm. It doesn't physically stop the burglar from stepping onto the property, but as soon as it detects unusual motion, it sets off an alarm to alert the guard.
+
+---
+
+## Application-Security
+
+### Static Application Security Testing (SAST)
+
+* **What it is:** A method of security testing where software code is analyzed for vulnerabilities while the program is **not running**.
+* **Simple Example:** SAST is like a spell-checker or proofreader reviewing a book's draft line by line before it goes to print. It spots typos and structural mistakes while the book is completely stationary.
+* **Key Terms:**
+* **Source Code:** The underlying human-readable instructions written by software developers to build a program.
+* **Vulnerability:** A flaw or weakness in software code that an attacker could exploit to compromise security.
+
+
+
+### Dynamic Application Security Testing (DAST)
+
+* **What it is:** A method of security testing where an application is tested **while it is running** by simulating external attacks from the outside in.
+* **Simple Example:** DAST is like crash-testing a car while it's driving down a track. Instead of looking at the blueprints, testers intentionally bump into the car from different angles to see how well it reacts in real time.
+
+---
+
+## Front-end Web Development
+
+### HTML (HyperText Markup Language)
+
+* **What it is:** The standard language used to define the structure and content of a webpage.
+* **Simple Example:** HTML acts like the **wooden skeleton** or blueprint of a house. It defines where the walls, doors, and window openings go (headings, text paragraphs, buttons, and image placeholders).
+
+### CSS (Cascading Style Sheets)
+
+* **What it is:** The design language used to describe how HTML elements should be presented visually on screen.
+* **Simple Example:** CSS is the **paint, wallpaper, and interior design** of the house. It decides what color the walls are, how large the windows are, and what font or spacing is used for text.
+
+### JavaScript
+
+* **What it is:** A programming language that makes web pages interactive and dynamic.
+* **Simple Example:** JavaScript is the **plumbing and electrical systems** of the house. It makes things happen when you interact with them—like flipping a light switch to turn on a lamp, opening a garage door with a remote, or submitting a form without reloading the whole page.
+
+---
+
+## Back-end Web Development
+
+### API (Application Programming Interface)
+
+* **What it is:** A set of rules and protocols that allows two different software applications to communicate with each other.
+* **Simple Example:** An API acts like a **waiter in a restaurant**. You (the user/front-end) sit at the table and look at the menu. You place your order with the waiter (API), who takes your request to the kitchen (back-end database) and brings your food back to your table.
+* **Key Terms:**
+* **Protocol:** A standardized set of rules for formatting and processing data so that computers can understand each other.
+
+
+
+### HTTP Requests and Responses
+
+* **What it is:** The fundamental communication cycle of the web. A client sends an **HTTP Request** asking for data, and the server returns an **HTTP Response** containing the requested data or a status code.
+* **Simple Example:** Think of ordering a package online:
+1. **HTTP Request:** You send an order form (Request) to an online store asking for a pair of shoes.
+2. **HTTP Response:** The store receives your order and sends back a package containing the shoes along with a receipt confirming "Order Successful" (Response).
+
+
+* **Key Terms:**
+* **HTTP (HyperText Transfer Protocol):** The standardized set of rules used across the web to fetch documents, images, and data from server to client.
+* **Client:** The device or application (like your web browser) requesting information.
+* **Server:** A remote computer that stores web content and responds to requests from clients.
